@@ -64,8 +64,9 @@ public class PhoneBookMenu {
     }
 
     private void readFile() {
+
         try{
-            readWriteFilePhoneBook.readList();
+            phoneBookManager.setPhoneBookList(readWriteFilePhoneBook.readList());
         } catch (Exception e) {
             e.printStackTrace();
         }
